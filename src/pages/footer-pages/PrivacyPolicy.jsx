@@ -6,7 +6,7 @@ function PrivacyPolicy() {
     <h1 className="text-3xl font-bold mb-6 text-center">Privacy Policy</h1>
     <div className="mb-4">
         <h2 className="text-xl font-semibold mb-2">1. Introduction</h2>
-        <p>Welcome to NarrativeNook. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our platform.</p>
+        <p>Welcome to StoryFlicker. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our platform.</p>
     </div>
     <div className="mb-4">
         <h2 className="text-xl font-semibold mb-2">2. Information We Collect</h2>
@@ -47,7 +47,7 @@ function PrivacyPolicy() {
     </div>
     <div className="mb-4">
         <h2 className="text-xl font-semibold mb-2">8. Contact Us</h2>
-        <p>If you have questions or comments about this Privacy Policy, please contact us at support@narrativenook.com.</p>
+        <p>If you have questions or comments about this Privacy Policy, please contact us at support@StoryFlicker.com.</p>
     </div>
 </div>
 

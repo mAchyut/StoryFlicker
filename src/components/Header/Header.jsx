@@ -42,7 +42,7 @@ function Header() {
         <nav className='flex items-center justify-between'>
           <Link to='/' className='flex items-center'>
             <Logo width='50px' />
-            <span className='ml-3 text-white text-xl font-bold'>NarrativeNook</span>
+            <span className='ml-3 text-white text-xl font-bold'>StoryFlicker</span>
           </Link>
           <ul className='flex space-x-4'>
             {navItems.map((item) =>

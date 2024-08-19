@@ -6,7 +6,7 @@ function TermsConditions() {
     <h1 className="text-3xl font-bold mb-6 text-center">Terms and Conditions</h1>
     <div className="mb-4">
         <h2 className="text-xl font-semibold mb-2">1. Introduction</h2>
-        <p>Welcome to NarrativeNook. By accessing or using our platform, you agree to comply with and be bound by the following terms and conditions.</p>
+        <p>Welcome to StoryFlicker. By accessing or using our platform, you agree to comply with and be bound by the following terms and conditions.</p>
     </div>
     <div className="mb-4">
         <h2 className="text-xl font-semibold mb-2">2. Use of the Platform</h2>
@@ -14,7 +14,7 @@ function TermsConditions() {
     </div>
     <div className="mb-4">
         <h2 className="text-xl font-semibold mb-2">3. Intellectual Property</h2>
-        <p>All content on this platform, including text, graphics, logos, and images, is the property of NarrativeNook or its content suppliers and is protected by copyright laws.</p>
+        <p>All content on this platform, including text, graphics, logos, and images, is the property of StoryFlicker or its content suppliers and is protected by copyright laws.</p>
     </div>
     <div className="mb-4">
         <h2 className="text-xl font-semibold mb-2">4. User Accounts</h2>
@@ -26,7 +26,7 @@ function TermsConditions() {
     </div>
     <div className="mb-4">
         <h2 className="text-xl font-semibold mb-2">6. Limitation of Liability</h2>
-        <p>In no event shall NarrativeNook, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages.</p>
+        <p>In no event shall StoryFlicker, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages.</p>
     </div>
     <div className="mb-4">
         <h2 className="text-xl font-semibold mb-2">7. Changes to Terms</h2>
@@ -34,7 +34,7 @@ function TermsConditions() {
     </div>
     <div className="mb-4">
         <h2 className="text-xl font-semibold mb-2">8. Contact Us</h2>
-        <p>If you have any questions about these terms, please contact us at support@narrativenook.com.</p>
+        <p>If you have any questions about these terms, please contact us at support@StoryFlicker.com.</p>
     </div>
 </div>
 
