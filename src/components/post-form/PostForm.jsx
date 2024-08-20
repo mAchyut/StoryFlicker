@@ -6,8 +6,10 @@ import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import Select from "../Select";
 
+
+//This is for opening a specific file/blog
+
 export default function PostForm({ post }) {
-  // console.log(post) //TODO
   const { register, handleSubmit, watch, setValue, control, getValues } =
     useForm({
       defaultValues: {
@@ -23,6 +25,8 @@ export default function PostForm({ post }) {
   const [loading, setLoading] = useState(false);
 
   const submit = async (data) => {
+
+    //Upload Image start
     setLoading(true);
     if (post) {
       const file = data.image[0]
@@ -30,9 +34,12 @@ export default function PostForm({ post }) {
         : null;
 
       if (file) {
-        appwriteService.deleteFile(post.featuredImage);
-      }
+        await appwriteService.deleteFile(post.featuredImage);
 
+      }
+      // -----
+      
+      //update the post with the new data. If a new image was uploaded, it includes the new image’s ID (file.$id) in the update.
       const dbPost = await appwriteService.updatePost(post.$id, {
         ...data,
         featuredImage: file ? file.$id : undefined,
@@ -41,7 +48,9 @@ export default function PostForm({ post }) {
       if (dbPost) {
         navigate(`/post/${dbPost.$id}`);
       }
-    } else {
+    } 
+    //If post is not defined, it means you are creating a new post. It uploads the image provided in data(in else)
+    else { 
       const file = await appwriteService.uploadFile(data.image[0]);
 
       if (file) {
@@ -79,6 +88,10 @@ export default function PostForm({ post }) {
 
     return () => setLoading(false) && subscription.unsubscribe();
   }, [watch, slugTransform, setValue]);
+
+  setTimeout(()=>{
+    setLoading(false)
+  }, 10000)
 
   return loading ? (
     <div className="flex items-center justify-center min-h-screen bg-white w-full">

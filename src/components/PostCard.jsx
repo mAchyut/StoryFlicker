@@ -2,6 +2,8 @@ import React from 'react'
 import appwriteService from '../appwrite/config'
 import {Link} from 'react-router-dom'
 
+
+//This is for the cards in grid
 function PostCard({$id, title, featuredImage}) {
   return (
     <Link to={`/post/${$id}`}>
