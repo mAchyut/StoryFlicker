@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # StoryFlicker
 
 A fullStack blog application built with React, Redux Toolkit, and Appwrite. This app allows users to create, edit, and delete blog posts, manage authentication, and upload files.
