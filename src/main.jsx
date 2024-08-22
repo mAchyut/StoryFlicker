@@ -14,7 +14,7 @@ import { Features,Contact,Account, TermsConditions, PrivacyPolicy } from "./page
 const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<App />}>
-        <Route index element={<Home />} />
+        <Route index  element =  {<Home />} />
         <Route path="login" element={<AuthLayout authentication={false}><Login /></AuthLayout>} />
         <Route path="signup" element={<AuthLayout authentication={false}><Signup /></AuthLayout>} />
         <Route path="all-posts" element={<AuthLayout authentication><AllPosts /></AuthLayout>} />
@@ -24,7 +24,7 @@ const router = createBrowserRouter(
         {/* Footer Pages starts here */}
         <Route path='/features' element={<Features />} />
         <Route path='/contact-us' element={<Contact />} />
-        <Route path='/account' element={<Account />} />
+        <Route path="/account" element={<AuthLayout authentication> <Account /> </AuthLayout>} /> 
         <Route path='/t&c' element={<TermsConditions />} />
         <Route path='/PrivacyPolicy' element={<PrivacyPolicy />} />
       </Route>

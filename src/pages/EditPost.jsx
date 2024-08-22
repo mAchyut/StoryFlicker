@@ -5,7 +5,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 function EditPost() {
     const [post, setPost] = useState(null); 
-    const { slug } = useParams();
+    const { slug } = useParams(); //to get id from the url
     const navigate = useNavigate();
     const [loading, setLoading] = useState(true)
 
