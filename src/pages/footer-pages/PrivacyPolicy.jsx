@@ -2,7 +2,7 @@ import React from 'react'
 
 function PrivacyPolicy() {
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg">
+    <div className="max-w-4xl mx-auto p-6 rounded-lg">
     <h1 className="text-3xl font-bold mb-6 text-center">Privacy Policy</h1>
     <div className="mb-4">
         <h2 className="text-xl font-semibold mb-2">1. Introduction</h2>
@@ -12,7 +12,7 @@ function PrivacyPolicy() {
         <h2 className="text-xl font-semibold mb-2">2. Information We Collect</h2>
         <p>We may collect information about you in a variety of ways. The information we may collect on the platform includes:</p>
         <ul className="list-disc list-inside">
-            <li>Personal Data: Name, email address, phone number, etc.</li>
+            <li>Personal Data: Name, email address etc.</li>
             <li>Derivative Data: Information our servers automatically collect when you access the platform, such as your IP address, browser type, etc.</li>
         </ul>
     </div>

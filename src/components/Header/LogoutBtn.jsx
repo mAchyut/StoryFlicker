@@ -19,7 +19,7 @@ function LogoutBtn() {
       <img src={"https://i.pinimg.com/originals/9f/5b/a6/9f5ba6b38c4259a23c5965a8164ec86f.gif"} className="w-full max-w-xs" />
     </div>
   ) : (
-    <button className='inline-block px-6 py-2 text-white rounded-full font-medium hover:bg-gray-600 transition duration-200' onClick={logoutHandler}>
+    <button className='inline-block px-6 py-2 text-gray-800 rounded-full font-medium hover:bg-gray-600 hover:text-white transition duration-200' onClick={logoutHandler}>
       Logout
     </button>
   );

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Account() {
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg">
+    <div className="max-w-4xl mx-auto p-6 shadow-md rounded-lg">
     <h1 className="text-3xl font-bold mb-6 text-center">My Account</h1>
     <div className="mb-4">
         <h2 className="text-xl font-semibold mb-2">Username</h2>

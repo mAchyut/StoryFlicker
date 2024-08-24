@@ -24,10 +24,10 @@ if(loading){
     return (
       <div className="w-full py-8 mt-4 text-center">
         <Container>
-          <div className="flex flex-wrap justify-center items-center min-h-screen bg-gray-100">
+          <div className="flex flex-wrap justify-center items-center min-h-screen bg-gray-100 rounded-xl">
             <div className="p-4 w-full max-w-md bg-white rounded-lg shadow-lg">
               <h1 className="text-3xl font-bold text-center text-gray-800 hover:text-gray-600">
-                Please Login to read posts!
+                 Login to read posts!
               </h1>
             </div>
           </div>

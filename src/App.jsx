@@ -30,7 +30,7 @@ useEffect(() => {
     
 <div className='min-h-screen flex flex-col bg-gray-100 w-full overflow-x-hidden'>
       <Header />
-      <main className='flex-grow w-full px-4 py-6 bg-gray-200 shadow-md border border-gray-400'>
+      <main className='flex-grow w-full px-4 py-6 bg-gray-200 shadow-md border border-gray-300'>
         <Outlet />
       </main>
       <Footer />
