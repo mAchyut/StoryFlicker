@@ -39,7 +39,32 @@ function Header() {
   return (
     <header className='py-4 shadow-lg bg-gray-200'>
       <Container>
-        <nav className='flex items-center justify-between'>
+        <nav className='hidden md:flex items-center justify-between'>
+          <Link to='/' className='flex items-center'>
+            {/* <Logo width='50px' /> */}
+            <span className='ml-3 text-white text-xl font-bold font-mono'><i className='text-[#d65c6b]'>Story</i><i className='text-black'>Flicker</i></span>
+          </Link>
+          <ul className='flex space-x-4'>
+            {navItems.map((item) =>
+              item.active ? (
+                <li key={item.name}>
+                  <button
+                    className='inline-block px-4 py-2 text-gray-800 font-medium rounded hover:bg-gray-600 hover:text-white transition duration-200'
+                    onClick={() => navigate(item.slug)}
+                  >
+                    {item.name}
+                  </button>
+                </li>
+              ) : null
+            )}
+            {authStatus && (
+              <li>
+                <LogoutBtn />
+              </li>
+            )}
+          </ul>
+        </nav>
+        <nav className='md:hidden flex flex-col items-center justify-between'> {/* for smaller devices */}
           <Link to='/' className='flex items-center'>
             {/* <Logo width='50px' /> */}
             <span className='ml-3 text-white text-xl font-bold font-mono'><i className='text-[#d65c6b]'>Story</i><i className='text-black'>Flicker</i></span>
